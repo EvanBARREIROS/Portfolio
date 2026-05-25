@@ -1,0 +1,36 @@
+:root {
+    --node-progress: 5%; 
+}
+
+.node-progress-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.node-progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.node-progress-fill {
+    height: 100%;
+    background-color: #68a063; /* Vert Node.js */
+    width: var(--node-progress); 
+    transition: width 0.3s;
+}
+
+.node-progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.node-progress-label {
+    text-align: center;
+    width: 25%;
+}

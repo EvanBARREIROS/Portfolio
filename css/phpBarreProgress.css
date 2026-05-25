@@ -1,0 +1,36 @@
+:root {
+    --php-progress: 3%; /* Ajuste selon ton niveau */
+}
+
+.php-progress-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.php-progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.php-progress-fill {
+    height: 100%;
+    background-color: #8892be; /* Violet PHP */
+    width: var(--php-progress); 
+    transition: width 0.3s;
+}
+
+.php-progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.php-progress-label {
+    text-align: center;
+    width: 25%;
+}
